@@ -38,3 +38,26 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
+
+// Other JavaScript code...
+
+function filterProducts(category) {
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => {
+    btn.classList.remove('active');
+    if (btn.dataset.category === category) {
+      btn.classList.add('active'); // Highlight the active button
+    }
+  });
+
+  const productItems = document.querySelectorAll('.product-item');
+  productItems.forEach(item => {
+    if (category === 'all' || item.classList.contains(category)) {
+      item.style.display = 'block'; // Display products that match the category or show all if 'all' is selected
+    } else {
+      item.style.display = 'none'; // Hide products that don't match the category
+    }
+  });
+}
+
+// Other JavaScript code...

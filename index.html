@@ -229,6 +229,7 @@
         - #PRODUCT
       -->
 
+            
       <section class="section shop">
         <div class="container">
           <h2 class="h2 section-title">Shop</h2>
@@ -247,22 +248,21 @@
             </li>
           </ul>
           <ul class="product-list">
-            <!-- Product Items Go Here -->
-            <li class="product-item all t-shirts">
+            <li class="product-item t-shirts">
               <div class="product-card">
                 <img src="./assets/images/tshirt-1.jpg" alt="T-Shirt 1">
                 <h3>T-Shirt 1</h3>
                 <p>$19.99</p>
               </div>
             </li>
-            <li class="product-item all hoodies">
+            <li class="product-item hoodies">
               <div class="product-card">
                 <img src="./assets/images/hoodie-1.jpg" alt="Hoodie 1">
                 <h3>Hoodie 1</h3>
                 <p>$39.99</p>
               </div>
             </li>
-            <li class="product-item all pants">
+            <li class="product-item pants">
               <div class="product-card">
                 <img src="./assets/images/pants-1.jpg" alt="Pants 1">
                 <h3>Pants 1</h3>
@@ -273,24 +273,7 @@
           </ul>
         </div>
       </section>
-      
-      <script>
-        function filterProducts(category) {
-          const productItems = document.querySelectorAll('.product-item');
-          productItems.forEach(item => {
-            if (category === 'all') {
-              item.style.display = 'block'; // Display all products
-            } else {
-              item.style.display = 'none'; // Hide all product items
-              if (item.classList.contains(category)) {
-                item.style.display = 'block'; // Display product items with selected category
-              }
-            }
-          });
-        }
-      </script>
-      
-
+            
 
       <!-- 
         - #CTA
