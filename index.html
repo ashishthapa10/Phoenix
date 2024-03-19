@@ -229,95 +229,54 @@
         - #PRODUCT
       -->
 
-      <section id="shop" class="section shop">
+      <section class="section shop">
         <div class="container">
-      
           <h2 class="h2 section-title">Shop</h2>
-      
           <ul class="filter-list">
-      
             <li>
-              <button class="filter-btn active">All</button>
+              <button class="filter-btn active" onclick="filterProducts('all')">All</button>
             </li>
-      
             <li>
-              <button class="filter-btn">T-Shirts</button>
+              <button class="filter-btn" onclick="filterProducts('t-shirts')">T-Shirts</button>
             </li>
-      
             <li>
-              <button class="filter-btn">Hoodies</button>
+              <button class="filter-btn" onclick="filterProducts('hoodies')">Hoodies</button>
             </li>
-      
             <li>
-              <button class="filter-btn">Pants</button>
+              <button class="filter-btn" onclick="filterProducts('pants')">Pants</button>
             </li>
-      
           </ul>
-      
           <ul class="product-list">
-      
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-      
-                <figure class="card-banner">
-                  <img src="./assets/images/tshirt-1.jpg" width="312" height="350" loading="lazy"
-                    alt="Printed T-Shirt" class="image-contain">
-      
-                  <ul class="card-action-list">
-      
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-      
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-      
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-      
-                      <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
-                    </li>
-      
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-      
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-      
-                  </ul>
-                </figure>
-      
-                <div class="card-content">
-      
-                  <div class="card-cat">
-                    <a href="#" class="card-cat-link">T-Shirts</a>
-                  </div>
-      
-                  <h3 class="h3 card-title">
-                    <a href="#">Printed T-Shirt</a>
-                  </h3>
-      
-                  <data class="card-price" value="29.99">$29.99</data>
-      
-                </div>
-      
-              </div>
+            <li class="product-item t-shirts">
+              <!-- Product Card for T-Shirts -->
             </li>
-      
+            <li class="product-item hoodies">
+              <!-- Product Card for Hoodies -->
+            </li>
+            <li class="product-item pants">
+              <!-- Product Card for Pants -->
+            </li>
             <!-- Additional Product Items Go Here -->
-      
           </ul>
-      
         </div>
       </section>
       
-
-
+      <script>
+        function filterProducts(category) {
+          const productItems = document.querySelectorAll('.product-item');
+          productItems.forEach(item => {
+            if (category === 'all') {
+              item.style.display = 'block'; // Display all products
+            } else {
+              item.style.display = 'none'; // Hide all product items
+              if (item.classList.contains(category)) {
+                item.style.display = 'block'; // Display product items with selected category
+              }
+            }
+          });
+        }
+      </script>      
+      
 
 
       <!-- 
