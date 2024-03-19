@@ -1295,7 +1295,146 @@ a.footer-link:is(:hover, :focus) { color: var(--bittersweet); }
    * PRODUCTS
    */
 
-  .product-list { grid-template-columns: repeat(4, 1fr); }
+  .<!-- Product Section -->
+  <section class="section product">
+      <div class="container">
+  
+          <h2 class="h2 section-title">Bestsellers Clothing</h2>
+  
+          <ul class="filter-list">
+  
+              <li>
+                  <button class="filter-btn  active">All</button>
+              </li>
+  
+              <li>
+                  <button class="filter-btn">T-shirts</button>
+              </li>
+  
+              <li>
+                  <button class="filter-btn">Jeans</button>
+              </li>
+  
+              <li>
+                  <button class="filter-btn">Dresses</button>
+              </li>
+  
+              <li>
+                  <button class="filter-btn">Jackets</button>
+              </li>
+  
+          </ul>
+  
+          <ul class="product-list">
+  
+              <li class="product-item">
+                  <div class="product-card" tabindex="0">
+  
+                      <figure class="card-banner">
+                          <img src="./assets/images/product-1.jpg" width="312" height="350" loading="lazy"
+                               alt="Men's T-shirt" class="image-contain">
+  
+                          <div class="card-badge">New</div>
+  
+                          <ul class="card-action-list">
+  
+                              <li class="card-action-item">
+                                  <button class="card-action-btn" aria-labelledby="card-label-1">
+                                      <ion-icon name="cart-outline"></ion-icon>
+                                  </button>
+  
+                                  <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                              </li>
+  
+                              <li class="card-action-item">
+                                  <button class="card-action-btn" aria-labelledby="card-label-2">
+                                      <ion-icon name="heart-outline"></ion-icon>
+                                  </button>
+  
+                                  <div class="card-action-tooltip" id="card-label-2">Add to Wishlist</div>
+                              </li>
+  
+                              <li class="card-action-item">
+                                  <button class="card-action-btn" aria-labelledby="card-label-3">
+                                      <ion-icon name="eye-outline"></ion-icon>
+                                  </button>
+  
+                                  <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                              </li>
+  
+                              <li class="card-action-item">
+                                  <button class="card-action-btn" aria-labelledby="card-label-4">
+                                      <ion-icon name="repeat-outline"></ion-icon>
+                                  </button>
+  
+                                  <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                              </li>
+  
+                          </ul>
+                      </figure>
+  
+                      <div class="card-content">
+  
+                          <div class="card-cat">
+                              <a href="#" class="card-cat-link">Men</a> /
+                              <a href="#" class="card-cat-link">Women</a>
+                          </div>
+  
+                          <h3 class="h3 card-title">
+                              <a href="#">Men's T-shirt</a>
+                          </h3>
+  
+                          <data class="card-price" value="29.99">$29.99</data>
+  
+                      </div>
+  
+                  </div>
+              </li>
+  
+              <!-- Other product items go here -->
+  
+          </ul>
+  
+      </div>
+  </section>
+  
+  <!-- Call-to-Action Section -->
+  <section class="section cta">
+      <div class="container">
+  
+          <ul class="cta-list">
+  
+              <li>
+                  <div class="cta-card" style="background-image: url('./assets/images/cta-1.jpg')">
+                      <p class="card-subtitle">New Arrivals</p>
+  
+                      <h3 class="h2 card-title">Upgrade Your Wardrobe</h3>
+  
+                      <a href="#" class="btn btn-link">
+                          <span>Shop Now</span>
+                          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                      </a>
+                  </div>
+              </li>
+  
+              <li>
+                  <div class="cta-card" style="background-image: url('./assets/images/cta-2.jpg')">
+                      <p class="card-subtitle">Limited Time Offer</p>
+  
+                      <h3 class="h2 card-title">Get Ready for Spring</h3>
+  
+                      <a href="#" class="btn btn-link">
+                          <span>Shop Now</span>
+                          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                      </a>
+                  </div>
+              </li>
+  
+          </ul>
+  
+      </div>
+  </section>
+  
 
 
 
